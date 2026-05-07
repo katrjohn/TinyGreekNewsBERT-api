@@ -22,7 +22,7 @@ Built with [TinyGreekNewsBERT](https://huggingface.co/katrjohn/TinyGreekNewsBERT
 **1. Clone the repo**
 ```bash
 git clone https://github.com/katrjohn/TinyGreekNewsBERT-api
-cd greek-news-bert-api
+cd TinyGreekNewsBERT-api
 ```
 
 **2. Install dependencies**

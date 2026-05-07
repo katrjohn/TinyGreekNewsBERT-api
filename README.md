@@ -58,9 +58,7 @@ Accepts a Greek text string and returns classification labels and NER tags.
 **Response:**
 ```json
 	
-Response body
-Download
-{
+Response body{
   "classification labels": [
     {
       "label": "Περιβάλλον και κλίμα",

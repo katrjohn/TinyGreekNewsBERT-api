@@ -21,7 +21,7 @@ Built with [TinyGreekNewsBERT](https://huggingface.co/katrjohn/TinyGreekNewsBERT
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/yourusername/greek-news-bert-api
+git clone https://github.com/katrjohn/TinyGreekNewsBERT-api
 cd greek-news-bert-api
 ```
 

@@ -51,12 +51,15 @@ Accepts a Greek text string and returns classification labels and NER tags.
 **Request:**
 ```json
 {
-  "sentence": "η νεα τεχνολογια της katran is softworks δημιουργει data centers τα οποια ειναι φιλικα προς το περιβαλλον"
+  "sentence": "Η νέα τεχνολογία της katranis softworks δημιουργεί data centers τα οποία είναι φιλικά προς το περιβάλλον και δεν δημιουργούν ρύπους"
 }
 ```
 
 **Response:**
 ```json
+	
+Response body
+Download
 {
   "classification labels": [
     {
@@ -70,11 +73,32 @@ Accepts a Greek text string and returns classification labels and NER tags.
   ],
   "Named Entity Recognition Labels": {
     "[CLS]": "O",
+    "η": "O",
+    "νεα": "O",
+    "τεχνολογια": "O",
+    "της": "O",
     "kat": "B-PRODUCT",
     "##ran": "I-PRODUCT",
     "##is": "I-PRODUCT",
     "soft": "I-PRODUCT",
-    "##works": "I-PRODUCT"
+    "##works": "I-PRODUCT",
+    "δημιουργει": "O",
+    "data": "O",
+    "center": "O",
+    "##s": "O",
+    "τα": "O",
+    "οποια": "O",
+    "ειναι": "O",
+    "φιλικα": "O",
+    "προς": "O",
+    "το": "O",
+    "περιβαλλον": "O",
+    "και": "O",
+    "δεν": "O",
+    "δημιουργουν": "O",
+    "ρυπου": "O",
+    "##ς": "O",
+    "[SEP]": "O"
   }
 }
 ```

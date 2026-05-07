@@ -1,8 +1,6 @@
 # TinyGreekNewsBERT-api
 REST API serving a Greek news classification and NER model built on BERT
-# Greek News BERT API
 
-REST API serving a Greek news classification and NER model built on BERT.
 
 Built with [TinyGreekNewsBERT](https://huggingface.co/katrjohn/TinyGreekNewsBERT) — a fine-tuned BERT model for Greek news text. Given a Greek sentence, the API returns the two most likely news categories and the named entities found in the text.
 

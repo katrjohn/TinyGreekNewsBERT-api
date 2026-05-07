@@ -139,6 +139,30 @@ Returns API status.
 | 18 | Τεχνολογία και επιστήμη |
 
 ---
+## NER Labels
+ 
+| Label | Description |
+|---|---|
+| O | No entity |
+| B-ORG / I-ORG | Organization |
+| B-PERSON / I-PERSON | Person |
+| B-CARDINAL / I-CARDINAL | Cardinal number |
+| B-GPE / I-GPE | Geopolitical entity (country, city) |
+| B-DATE / I-DATE | Date |
+| B-ORDINAL / I-ORDINAL | Ordinal number |
+| B-PERCENT / I-PERCENT | Percentage |
+| B-LOC / I-LOC | Location |
+| B-NORP / I-NORP | Nationality, religious or political group |
+| B-MONEY / I-MONEY | Monetary value |
+| B-TIME / I-TIME | Time |
+| B-EVENT / I-EVENT | Event |
+| B-PRODUCT / I-PRODUCT | Product |
+| B-FAC / I-FAC | Facility |
+| B-QUANTITY / I-QUANTITY | Quantity |
+ 
+`B-` marks the beginning of an entity. `I-` marks continuation of the same entity.
+ 
+---
 
 ## Model
 

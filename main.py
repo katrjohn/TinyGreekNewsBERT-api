@@ -42,7 +42,10 @@ def predict(request : PredictRequest):
     try:
         ner_preds_dict = {}
         cls_preds = []
+        if len(request.sentence) > 512:
+            request.sentence = request.sentence[:412]
         inputs = tokenizer(request.sentence, return_tensors="pt")
+
         with torch.no_grad():
             cls_logits,ner_logits = model(**inputs)
         cls_probs = torch.softmax(cls_logits, dim=-1)

@@ -21,7 +21,6 @@ ner_label_set = ["PAD", "O",
 ]
 @pytest.fixture
 def client():
-    # Αυτή η συνάρτηση "γεννάει" τον client
     return TestClient(app)
 
 
@@ -36,7 +35,7 @@ def test_model(client):
         
         assert item in ner_label_set
 
-def test_health(client):  # pytest sees "client" parameter, finds the fixture, runs it, passes the result in
+def test_health(client):  
     response = client.get("/health")
     assert response.status_code == 200
 
